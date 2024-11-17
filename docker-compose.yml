@@ -1,0 +1,8 @@
+services:
+  go-server:
+    build: ./server
+
+  nginx-proxy:
+    build: ./nginx
+    ports:
+      - 8443:443
